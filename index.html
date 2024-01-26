@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+ </head>
+ <body>
+  <div class="page">
+        <div id="container">
+         <h2>Todo List</h2>
+         <div id="adder">
+            <input type="text" class="input-date" id="input-task" placeholder="Add a todo...">
+            <input type="date" class="input-date" id="input-date">
+            <button id="plus-btn" onclick="newItem()">+</button> 
+            <button id="new-btn" onclick="newItem()">Add</button> 
+         </div>
+
+          <div id="delete-container">
+            <button id="delete-btn" onclick="deleteItem()">Delete all</button>
+          </div>
+          <h3 id="abc">Task</h3>
+          <div id="list">
+            <ul id="myUL">
+              <li class="li-sk">
+             <div class="li-container">
+                  <span>shopping</span>
+                 <span class="li-align">[22-12-2024]</span>
+                </div> 
+              </li>
+            </ul>
+          </div>
+
+    </div>
+    <footer class="footer">
+      <p>sanjeev creation @2024</p>
+    </footer>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+ </html>
