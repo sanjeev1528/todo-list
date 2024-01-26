@@ -1,6 +1,7 @@
 body{
   background-color: rgb(250, 250, 245);
   font-family: sans-serif;
+  overflow:hidden;
 }
 .page{
       height: 100vh;
