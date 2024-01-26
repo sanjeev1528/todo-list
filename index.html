@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+ </head>
+ <body>
+  <div class="page">
+        <div id="container">
+          <div class="head-line">
+         <h2 class="pb">Todo List</h2>
+         <select class="theme" onchange="themeSelect()" id="colorSelect" >
+          <option value="theme" selected disabled hidden>Select Theme</option>
+          <option value="blue" class="theme-option">Blue...</option>
+          <option value="yellow" class="theme-option">yellow...</option>
+          <option value="green" class="theme-option">Green...</option>
+          <option value="lavender" class="theme-option">Lavender...</option>
+         </select>
+        </div>
+         <div id="adder">
+            <input type="text" class="input-date bor" id="input-task" placeholder="Add a todo...">
+            <input type="date" class="input-date bor" id="input-date">
+            <button id="plus-btn" class="bg" onclick="newItem()">+</button> 
+            <button id="new-btn" class="bg" onclick="newItem()">Add</button> 
+         </div>
+
+          <div id="delete-container">
+            <button id="delete-btn" class="bg" onclick="deleteItem()">Delete all</button>
+          </div>
+          <h3 id="abc" class="bg">Task</h3>
+          <div id="list">
+            <ul id="myUL">
+              <li class="li-sk">
+             <div class="li-container">
+                  <span>shopping</span>
+                 <span class="li-align">[22-12-2024]</span>
+                </div> 
+              </li>
+            </ul>
+          </div>
+
+    </div>
+    <footer class="footer">
+      <pre><span class="color">sanjeev</span> creation @2024</pre>
+    </footer>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+ </html>
